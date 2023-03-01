@@ -3,7 +3,7 @@ const stopButton = document.querySelector('[data-stop]');
 const body = document.querySelector('body')
 
 const startTimer = event => {
-      timerColor = setInterval(() => {
+      const timerColor = setInterval(() => {
           console.log('event');
           body.style.backgroundColor = getRandomHexColor();
           document.querySelector('[data-start]').disabled = true;
